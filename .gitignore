@@ -29,3 +29,16 @@ outputs/
 *.hdf5
 *.npz
 *.npy
+
+# Dex-Net sandbox artifacts
+runs/cache_meshproc/
+runs/**/*.sdf
+runs/**/*.obj
+
+# Input meshes can be large; keep them local unless you want to version them
+inputs/meshes/*
+!inputs/meshes/.gitkeep
+
+# Python caches
+__pycache__/
+*.pyc
